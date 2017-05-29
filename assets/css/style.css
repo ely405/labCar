@@ -10,6 +10,9 @@
 .c-white{
   color: white;
 }
+.bo-non{
+  border: none;
+}
 .bor-white{
   border: 1px solid white;
 }
@@ -24,9 +27,6 @@
 }
 .p-0{
   padding: 0;
-}
-.bo-non{
-  border: none;
 }
 .item-center{
   display: flex;
