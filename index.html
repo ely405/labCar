@@ -94,37 +94,41 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid bg-orange">
-    <section class="row">
-      <div class="col-xs-12 col-sm-6">
-        <form class="form-horizontal c-white">
-          <h2>Tarifas</h2>
-          <h4>Consulta las tarifas LabCar aquí</h4>
-          <div class="form-group">
-            <label for="inp-origin" class="col-xs-1 control-label"><i class="glyphicon glyphicon-record"></i></label>
-            <div class="col-xs-10">
-              <input type="email" class="form-control bg-orange bor-white" id="inp-origin" placeholder="Ingrese punto de partida">
+  <section class="container-fluid bg-orange" id="rate">
+    <section class="container modal-body">
+      <section class="row">
+        <div class="col-xs-12 col-sm-6">
+          <form class="form-horizontal c-white">
+            <h2>Tarifas</h2>
+            <h4>Consulta las tarifas LabCar aquí</h4>
+            <div class="form-group">
+              <label for="inp-origin" class="col-xs-1 control-label"><i class="glyphicon glyphicon-record"></i></label>
+              <div class="col-xs-10">
+                <input type="email" class="form-control bg-orange bor-white" id="inp-origin" placeholder="Ingrese punto de partida">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="inp-destiny" class="col-xs-1 control-label"><i class="glyphicon glyphicon-send"></i></label>
-            <div class="col-xs-10">
-              <input type="password" class="form-control bg-orange bor-white" id="inp-destiny" placeholder="Ingrese su destino">
+            <div class="form-group">
+              <label for="inp-destiny" class="col-xs-1 control-label"><i class="glyphicon glyphicon-send"></i></label>
+              <div class="col-xs-10">
+                <input type="password" class="form-control bg-orange bor-white" id="inp-destiny" placeholder="Ingrese su destino">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-10 text-center">
-              <button type="submit" class="btn btn-default"><strong>¡Trazar ruta!</strong></button>
+            <div class="form-group">
+              <div class="col-sm-10 text-center">
+                <button type="submit" class="btn btn-default"><strong>¡Trazar ruta!</strong></button>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-xs-12 col-sm-6" id="map"></div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1 modal-body bor-white">
+          <div class="col-xs-12" id="map"></div>
+        </div>
+      </section>
     </section>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv73MwqDZxMHuUSnFyKLq6ZdCDEbCBeQA&callback=initMap" async defer></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
