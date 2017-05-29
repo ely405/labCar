@@ -105,21 +105,22 @@
             <div class="form-group">
               <label for="inp-origin" class="col-xs-1 control-label"><i class="glyphicon glyphicon-record"></i></label>
               <div class="col-xs-10">
-                <input type="email" class="form-control bg-orange bor-white" id="inp-origin" placeholder="Ingrese punto de partida">
+                <input type="text" class="form-control bg-orange bor-white" id="inp-origin" placeholder="Ingrese punto de partida">
               </div>
             </div>
             <div class="form-group">
               <label for="inp-destiny" class="col-xs-1 control-label"><i class="glyphicon glyphicon-send"></i></label>
               <div class="col-xs-10">
-                <input type="password" class="form-control bg-orange bor-white" id="inp-destiny" placeholder="Ingrese su destino">
+                <input type="text" class="form-control bg-orange bor-white" id="inp-destiny" placeholder="Ingrese su destino">
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-10 text-center">
-                <button type="submit" class="btn btn-default"><strong>¡Trazar ruta!</strong></button>
+                <button type="button" class="btn btn-default" id="btn-route"><strong>¡Trazar ruta!</strong></button>
               </div>
             </div>
           </form>
+          <div id="total-rate"></div>
         </div>
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 modal-body bor-white">
           <div class="col-xs-12" id="map"></div>
@@ -127,7 +128,7 @@
       </section>
     </section>
   </section>
-  <footer class="container-fluid bg-dark-gray c-white">
+  <footer class="container-fluid bg-dark-gray c-white ff-open-sans">
     <section class="row bor-btm-white modal-body">
       <img src="assets/img/logo-blanco.png" alt="logo labCar">
     </section>
@@ -187,7 +188,7 @@
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv73MwqDZxMHuUSnFyKLq6ZdCDEbCBeQA&callback=initMap" async defer></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv73MwqDZxMHuUSnFyKLq6ZdCDEbCBeQA&callback=initMap&libraries=places" async defer></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
