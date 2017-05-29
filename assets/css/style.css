@@ -4,6 +4,9 @@
 .c-white{
   color: white;
 }
+.bor-white{
+  border: 1px solid white;
+}
 .bg-trans{
   background-color: transparent;
 }
@@ -25,6 +28,12 @@
 .item-center{
   display: flex;
   align-items: center;
+}
+.dir-column{
+  flex-direction: column;
+}
+.line-30{
+  line-height: 3rem;
 }
 #hero{
   background-image: url("../img/taxi.jpg");
