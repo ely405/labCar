@@ -1,6 +1,9 @@
 .bg-orange{
   background-color: #F7B617;
 }
+.bg-rgblack{
+  background-color: rgba(0,0,0,0.7);
+}
 .c-white{
   color: white;
 }
@@ -28,17 +31,28 @@
 .item-center{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .dir-column{
   flex-direction: column;
 }
-/*.line-30{
-  line-height: 3rem;
-}*/
-#hero{
-  background-image: url("../img/taxi.jpg");
+.alig-fl-start{
+  align-items: flex-start;
+}
+.bg-prop{
   background-repeat: no-repeat;
   background-size: cover;
+}
+.height-100pr{
+  height: 100%;
+}
+#hero{
+  background-image: url("../img/taxi.jpg");
   height: 85vh;
   background-position-y: 100%;
+}
+#driver{
+  background-image: url("../img/conduce.jpg");
+  height: 30rem;
+  background-position-y: 50%;
 }
