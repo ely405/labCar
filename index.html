@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>labCar</title>
 </head>
 <body>
-  <header class="row">
-    <div id="logo" class="col-sm-6 hidden-xs">
+  <header >
+    <div id="logo" class="col-sm-5 hidden-xs">
       <a href="index.html"><img src="assets/img/logo.png" alt="logo labCar"></a>
     </div>
-    <nav class="navbar col-xs-4 col-sm-6">
+    <nav class="navbar col-xs-3 col-sm-6">
       <a class="btn visible-xs-inline" role="button" data-toggle="collapse" href="#menu-list-xs" aria-expanded="false" aria-controls="collapseExample"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
       <ul class="nav nav-pills nav-justified collapse hidden-sm hidden-md hidden-lg" id="menu-list-xs">
         <li role="presentation"><a href="#">Viaja</a></li>
@@ -30,10 +31,46 @@
       <img src="assets/img/logo.png" alt="logo labCar">
     </div>
   </header>
-  <div class="">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <section class="container-fluid">
+    <div class="row">
+      <div id="hero" class="col-xs-12 ff-open-sans p-0 c-white item-center">
+        <div class="col-xs-19 col-xs-offset-3 col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-6 bg-orange">
+          <div class="visible-xs">
+            <h3 class="modal-body h2">Comienza a viajar con
+              <div><img src="assets/img/logo-blanco.png" alt="logo labCar"></div>
+            </h3>
+            <div class="modal-body">
+              <button type="button" class="btn btn-default"><strong>Descarga el app</strong></button>
+            </div>
+          </div>
+          <div class="hidden-xs">
+            <div class="modal-body">
+              <h3>Disfruta del viaje</h3>
+              <h3>Eres dueño de tu tiempo</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Viaja con <img src="assets/img/logo-blanco.png" alt="logo labCar"></h4>
+              <form class="form-inline">
+                <h4 class="txt-up">Regístrate</h4>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" class="form-control bg-trans bo-non" id="exampleInputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" class="form-control bg-trans bo-non" id="exampleInputPassword3" placeholder="Password">
+                </div>
+              </form>
+              <h4>O bien</h4>
+              <button type="button" class="btn btn-default"><strong>Conviértete en un conductor</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</section>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

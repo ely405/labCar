@@ -1,0 +1,35 @@
+.bg-orange{
+  background-color: #F7B617;
+}
+.c-white{
+  color: white;
+}
+.bg-trans{
+  background-color: transparent;
+}
+.ff-open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+.ff-raleway{
+  font-family: 'Raleway', sans-serif;
+}
+.txt-up{
+  text-transform: uppercase;
+}
+.p-0{
+  padding: 0;
+}
+.bo-non{
+  border: none;
+}
+.item-center{
+  display: flex;
+  align-items: center;
+}
+#hero{
+  background-image: url("../img/taxi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  background-position-y: 100%;
+}
