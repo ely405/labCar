@@ -32,9 +32,9 @@
 .dir-column{
   flex-direction: column;
 }
-.line-30{
+/*.line-30{
   line-height: 3rem;
-}
+}*/
 #hero{
   background-image: url("../img/taxi.jpg");
   background-repeat: no-repeat;
