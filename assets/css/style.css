@@ -1,6 +1,9 @@
 .bg-orange{
   background-color: #F7B617;
 }
+.bg-dark-gray{
+ background-color: #2B2B2B;
+}
 .bg-rgblack{
   background-color: rgba(0,0,0,0.7);
 }
@@ -9,6 +12,9 @@
 }
 .bor-white{
   border: 1px solid white;
+}
+.bor-btm-white{
+  border-bottom: 1px solid white;
 }
 .ff-open-sans{
   font-family: 'Open Sans', sans-serif;
@@ -55,4 +61,9 @@
 }
 #map{
   height: 30rem;
+}
+@media (min-width: 768px){
+  .alig-fl-end-sm{
+    align-items: flex-end;
+  }
 }
