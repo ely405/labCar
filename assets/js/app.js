@@ -5,6 +5,16 @@ var btnRoute = document.getElementById("btn-route");
 var map;
 var marker;
 function initMap(){
+  var barranco = {lat: -12.143932, lng: -77.021874};
+  map= new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: barranco
+  });
+
+  var markBarranco = new google.maps.Marker({
+    position: barranco,
+    map: map
+  });
   (navigator.geolocation)? navigator.geolocation.getCurrentPosition(seePosition): containerMap.innerHTML = "Geolocalización no es soportado por tu navegador";
   autocompleteInput();
   btnRoute.addEventListener("click", showRoute);
@@ -32,14 +42,12 @@ function autocompleteInput(){
 function showRoute(){
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
-  console.log(directionsDisplay);
   var request = {
     origin: inpOrigin.value,
     destination: inpDestiny.value,
     travelMode: "DRIVING",
   };
   directionsService.route(request, function(response, status){
-    console.log(response);
     if(status === 'OK'){
       directionsDisplay.setDirections(response);
       marker.setMap(null);
