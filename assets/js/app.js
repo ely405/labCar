@@ -4,6 +4,7 @@ var inpDestiny = document.getElementById("inp-destiny");
 var btnRoute = document.getElementById("btn-route");
 var map;
 var marker;
+var markBarranco;
 function initMap(){
   var barranco = {lat: -12.143932, lng: -77.021874};
   map= new google.maps.Map(document.getElementById('map'), {
@@ -11,7 +12,7 @@ function initMap(){
     center: barranco
   });
 
-  var markBarranco = new google.maps.Marker({
+  markBarranco = new google.maps.Marker({
     position: barranco,
     map: map
   });
@@ -50,7 +51,7 @@ function showRoute(){
   directionsService.route(request, function(response, status){
     if(status === 'OK'){
       directionsDisplay.setDirections(response);
-      marker.setMap(null);
+      (marker || markBarranco).setMap(null);
       rateForTravel(response);
     }else{
       window.alert("No encontramos una ruta.");
