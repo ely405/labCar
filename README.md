@@ -15,3 +15,5 @@ Sabemos que tu tiempo es dinero, por lo que si nuestro servicio se demora en lle
 ## Componentes de la página
 
 > ### Navegador
+
+    ![Alt text](assets/img/functionality/menu_desktop.gif)
