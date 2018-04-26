@@ -4,6 +4,9 @@
 
 Es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.    
 + Puedes ver el demo aqui [LabCar](https://ely405.github.io/labCar/)
+
+![LabCar](https://user-images.githubusercontent.com/25912506/39336090-5823ba70-497b-11e8-981f-15ddceccadc5.PNG)
+
 ## Requerimientos
 
 - Responsive design (mobile, desktop)
