@@ -37,3 +37,5 @@ Es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde q
 ## Frameworks CSS
 
 + [Bootstrap](https://getbootstrap.com/)
+
+## Desarrollado para [Laboratoria](http://www.laboratoria.la)
